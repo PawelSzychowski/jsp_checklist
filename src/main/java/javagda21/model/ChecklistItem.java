@@ -18,6 +18,7 @@ public class ChecklistItem {
     private boolean completed;
     @ManyToOne
     private Checklist checklist;
+    @Enumerated(EnumType.STRING)
     private Status status;
     private String discription;
 
